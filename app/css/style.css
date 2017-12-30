@@ -1,0 +1,83 @@
+table {
+	font-family: arial, sans-serif;
+	border:1px solid black;
+	width:100%;
+	margin-top:2em;
+	
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:not(:first-child) {
+    background-color: #dddddd;
+}
+
+/* The animation code */
+@keyframes example {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 1;
+  }
+   50% {
+    opacity: 1;
+  }
+
+   75% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+
+.status {
+	opacity:0;
+	background-color: DarkBlue ;
+	text-align:center;
+	color:yellow;
+	font-size:22px;
+	animation-name: example;
+    animation-duration: 3.5s;
+    animation-timing-function: ease-out;
+}
+.option {
+  margin-top:50px;
+}
+
+.error {
+  font-size:14px;
+  color:red;
+}
+
+.pagination {
+    margin: 20px auto 0 auto;
+    width: 100%;
+}
+
+.pagination a {
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
